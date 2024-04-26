@@ -25,7 +25,7 @@ const Index = () => {
       <Button>
         <FaMusic /> Now Playing
       </Button>
-      <Text>{songs.length} songs</Text>
+      {songs.length > 0 ? <Text>{songs.length} songs</Text> : <Text>No music currently playing.</Text>}
     </Flex>
   );
 };
